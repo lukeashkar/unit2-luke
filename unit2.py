@@ -11,8 +11,9 @@ sentence= input("enter a sentence")
 word_count=len(sentence.split())
 print(word_count) """
 
+odd_or_even=int(input("pick a number"))
 
-odd_or_even=input("pick a number")
-odd_or_even=int
-if odd_or_even%2==0:
+if int(odd_or_even%2==0):
     print("even")
+elif (odd_or_even%2==1):
+    print("odd")
