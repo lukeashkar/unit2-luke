@@ -11,9 +11,28 @@ sentence= input("enter a sentence")
 word_count=len(sentence.split())
 print(word_count) """
 
-odd_or_even=int(input("pick a number"))
+""" odd_or_even=int(input("pick a number"))
 
 if int(odd_or_even%2==0):
     print("even")
 elif (odd_or_even%2==1):
-    print("odd")
+    print("odd") """
+
+
+""" bill=float(input("What is the bill?"))
+service=int(input("Rate the service from 1-4"))
+if service==1:
+    print("We recommend not tipping/ tipping 0 percent.")
+elif service==2:
+    print("We recommend tipping 15 percent.")
+elif service==3:
+    print("We recommend tipping 20 percent.")
+elif service==4:
+    print("We recommend tipping 25 percent.")
+else:
+    print("We said rate 1-4 we jus gon rob u now.") """
+
+number=int(input("pick a number: "))
+for i in range(1, number + 1):
+    if number % (i) == 0:
+        print(i)
