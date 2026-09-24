@@ -17,7 +17,8 @@ if int(odd_or_even%2==0):
     print("even")
 elif (odd_or_even%2==1):
     print("odd") """
-
+""" else:
+    print("ima slime u out") """
 
 """ bill=float(input("What is the bill?"))
 service=int(input("Rate the service from 1-4"))
@@ -32,7 +33,14 @@ elif service==4:
 else:
     print("We said rate 1-4 we jus gon rob u now.") """
 
-number=int(input("pick a number: "))
+""" number=int(input("pick a number: "))
 for i in range(1, number + 1):
     if number % (i) == 0:
+        print(i) """
+
+n1=int(input("Give me a number"))
+n2=int(input("Give me another number"))
+
+for i in range(n1+1,n2+1):
+    if n1 % (i) and n2 % (i) ==0:
         print(i)
