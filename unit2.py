@@ -40,7 +40,10 @@ for i in range(1, number + 1):
 
 n1=int(input("Give me a number"))
 n2=int(input("Give me another number"))
-
-for i in range(n1+1,n2+1):
-    if n1 % (i) and n2 % (i) ==0:
-        print(i)
+def factor(x, y):
+    factorlist = []
+    for i in range(1,n1+1):
+        if x % (i) ==0 and y % (i) ==0:
+            factorlist.append(i)
+    print(factorlist[-1])
+factor(n1, n2)
