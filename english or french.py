@@ -6,11 +6,11 @@ def language(sentence):
     wi= "S"
     wiwi="s"
     for i in range (len(sentence)):
-        if let or letter in sentence:
+        if let in sentence or letter in sentence:
             en+=1
 
     for i in range (len(sentence)):
-        if wi or wiwi in sentence:
+        if wi in sentence or wiwi in sentence:
             fr+=1
 
         if en>fr:
@@ -18,4 +18,4 @@ def language(sentence):
 
         elif fr>en:
             print("french")
-language("Lorsque j'avais six ans j'ai vu, une fois,une magnifique image,dans un livre")            
+language("The red cat sat on the mat. Why are you so sad cat? Don't ask that.")            
