@@ -1,18 +1,11 @@
 def wizards(N, start, duels):
     owner=start
     changed_hands= 1
-    """ print(duels[0][1]) """
-    x=0
-    y=1
+    
     for i in range(N):   
-        if owner== duels[x][y]:
-            owner==duels[x][x]    
-            changed_hands+=1
-        x+=1
-        y+=1
+        if duels[i][1]==owner:
+                owner=duels[i][0]    
+                changed_hands+=1
+    print(owner,changed_hands)
 
-
-
-
-
-    wizards(3, "A", ["BA","CB","DA"])
+wizards(3, "A", ["BA","CB","DA"])

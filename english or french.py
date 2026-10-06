@@ -13,9 +13,10 @@ def language(sentence):
         if wi in sentence or wiwi in sentence:
             fr+=1
 
-        if en>fr:
-            print("english")
+    if en>fr:
+         print("english")
 
-        elif fr>en:
-            print("french")
-language("The red cat sat on the mat. Why are you so sad cat? Don't ask that.")            
+    elif fr>en:
+        print("french")
+    sentence("The red cat sat on the mat. Why are you so sad cat? Don't ask that.")  
+    language(sentence)       
