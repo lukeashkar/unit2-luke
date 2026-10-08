@@ -1,16 +1,14 @@
-def language():
-    sentence= int(input("make a sentence"))
-    en=0
-    fr=0
-    english= "t" or "T"
-    french= "S" or "s"
-    for i in sentence():
-        if english in sentence:
-            en+=1
-        if french in sentence:
-            fr+=1
-        if en>fr:
-            print("your sentence is most likely english")
-        if fr>en:
-            print("your sentence is most likely french")
-language()
+def language(n, sent):
+    s=0
+    t=0
+    for i in range(n):
+        if sent[i].lower() =="s":
+            s+=1
+        if sent[i].lower() =="t":
+            t+=1
+    print(t,s)
+    if t > s:
+        print("this is prolly english")
+    else:
+        print("this is prolly french")
+language(14,"die you triangle")

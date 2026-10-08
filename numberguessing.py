@@ -1,5 +1,5 @@
 import random
-num = random.randint(1,100)
+num = random.randint(1,1000)
 gnum = 0
 used= []
 
