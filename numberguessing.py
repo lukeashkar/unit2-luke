@@ -8,10 +8,10 @@ while gnum != num:
     if gnum>num:
         print("yo ur number was TOO HIGH guess again lil bro")
         used.append(gnum)
-        print(f"the numbers u guesed already are{used}")
+        print(f"the numbers u gues already are{used}")
     if gnum<num:
         print("ur number too tiny u gotta guess higher up")
         used.append(gnum)
-        print(f"the numbers u guesed already are{used}")
+        print(f"the numbesrs guesed already are{used}")
     if  gnum==num:
         print("YOOOO U GOT IT UR A DEMON")
