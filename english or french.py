@@ -11,4 +11,4 @@ def language(n, sent):
         print("this is prolly english")
     else:
         print("this is prolly french")
-language(1,"h")
+language(1,"t")
