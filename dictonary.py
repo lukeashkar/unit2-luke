@@ -1,8 +1,4 @@
-def dictonary():
-    
-    
-    
-    store = [
+store = [
         {
             "name":"mcchicken",
             "price":43.99,
@@ -22,5 +18,8 @@ def dictonary():
             "description":"a blackhole with estimates of 40 to 66 billion solar mass for a cheap price of 84 cents "
         }
     ]
-    print(store[2])
+def dictonary():
+    for index, item in enumerate(store):
+        print(index, ":", item["name"])
+dictonary()
 
