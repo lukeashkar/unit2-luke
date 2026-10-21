@@ -17,7 +17,13 @@ store = [
             "department":"blackholes",
             "description":"a blackhole with estimates of 40 to 66 billion solar mass for a cheap price of 84 cents "
         }
-    ]
+        {
+            "name":"hank",
+            "price":0.1,
+            "department":"people",
+            "description":"its hank"
+        }
+        ]
 def dictonary():
     for index, item in enumerate(store):
         print(index, ":", item["name"])
