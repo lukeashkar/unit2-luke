@@ -24,16 +24,13 @@ store = [
             "description":"its hank"
         }
         ]
-def dictonary():
-    for index, item in enumerate(store):
-        
-
-        def p():
-            print("Welcome to el store we have for le sale")
-    dictonary()
-                           
-
-
+def dictonary(items):
+    for index, item in enumerate(items):
+            print(index, ":", item["name"]) 
+dictonary(store)
+def p():
+    purchased=int(input("which item do u want"))
+    print(store[purchased])
 p()
 
 
@@ -64,6 +61,4 @@ p()
 
 
 
-
-dictonary()
 
