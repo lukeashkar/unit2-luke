@@ -32,17 +32,22 @@ store = [
         ]
 def dictonary(items):
     for index, item in enumerate(items):
-            print(index, ":", item["name"]) 
+            print(index, ":", item["name"],item["price"]) 
 dictonary(store)
 def p():
+    cart=[]
     purchased=int(input("which item do u want"))
-    confirmation = input(f"are you sure you wanna buy {store[purchased]['name']} for {store[purchased]['price']} dollars ? (respond with yes or no caps do matter here also DO NOT put a space before typing your answer) -")
-    if confirmation== "yes":
-         print("alr thanks for shopping hope you come back eventually")
-    else:
-         print("why did bro just waste my time")
-
-
+    cart.append(store[purchased]["name"])
+keepgoing = input("would you like to start shopping?(plez dont put a space before typing also only inputs that work are yes and no)")
+if keepgoing== "no":
+     print("alr get out my face chud")
+while keepgoing=="yes":
+   
+    dictonary(store)
+    p()
+    keepgoing = input("would you like to continue shopping?(plez dont put a space before typing also only inputs that work are yes and no)")
+if keepgoing=="no":
+    print("i havent finished this part twin one day or day one")
 p()
 
 
