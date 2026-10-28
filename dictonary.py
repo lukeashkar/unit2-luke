@@ -30,25 +30,36 @@ store = [
              "description":"yo i pretty much did this in the name already just buy him"
         }
         ]
+cart=[]
+x=0
 def dictonary(items):
+    x=0
     for index, item in enumerate(items):
             print(index, ":", item["name"],item["price"]) 
-dictonary(store)
-def p():
-    cart=[]
-    purchased=int(input("which item do u want"))
+    
+    keepgoing = input("would you like to start shopping?(plez dont put a space before typing also only inputs that work are yes and no)")
+    while keepgoing=="yes":
+        purchased=int(input("which item do u want"))
+        keepgoing = input("would you like to continue shopping?(plez dont put a space before typing also only inputs that work are yes and no)")    
+        
+    x+=cart[purchased]["price"]
+
     cart.append(store[purchased]["name"])
-keepgoing = input("would you like to start shopping?(plez dont put a space before typing also only inputs that work are yes and no)")
-if keepgoing== "no":
+    
+    if keepgoing== "no":
+     
      print("alr get out my face chud")
-while keepgoing=="yes":
-   
-    dictonary(store)
-    p()
+    
+    
+    
+ 
+    
     keepgoing = input("would you like to continue shopping?(plez dont put a space before typing also only inputs that work are yes and no)")
-if keepgoing=="no":
-    print("i havent finished this part twin one day or day one")
-p()
+    if keepgoing=="no":
+        print(f"alr ur cart consists of {cart}. ur total will be {x} dollars")
+dictonary(store)
+
+
 
 
 
