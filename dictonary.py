@@ -25,7 +25,7 @@ store = [
         },
         {
              "name":"emperor of worlds, the one who controls the balance in the universe, the one who pierces the heavens, the one who the impossible becomes possible for, simon.",
-             "price": int(1000),
+             "price": 1000,
              "departments":"people",
              "description":"yo i pretty much did this in the name already just buy him"
         }
@@ -38,23 +38,18 @@ def dictonary(items):
             print(index, ":", item["name"],item["price"]) 
     
     keepgoing = input("would you like to start shopping?(plez dont put a space before typing also only inputs that work are yes and no)")
+    if keepgoing== "no":
+         
+         print("alr get out my face chud")
+         
+    
+    
     while keepgoing=="yes":
         purchased=int(input("which item do u want"))
         keepgoing = input("would you like to continue shopping?(plez dont put a space before typing also only inputs that work are yes and no)")    
-        
-    x+=cart[purchased]["price"]
-
-    cart.append(store[purchased]["name"])
+        cart.append(store[purchased]["name"])
     
-    if keepgoing== "no":
-     
-     print("alr get out my face chud")
-    
-    
-    
- 
-    
-    keepgoing = input("would you like to continue shopping?(plez dont put a space before typing also only inputs that work are yes and no)")
+        x+=store[purchased]["price"]
     if keepgoing=="no":
         print(f"alr ur cart consists of {cart}. ur total will be {x} dollars")
 dictonary(store)
