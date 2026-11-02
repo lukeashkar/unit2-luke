@@ -47,10 +47,18 @@ def dictonary(items):
     while keepgoing=="yes":
         purchased=int(input("which item do u want"))
         keepgoing = input("would you like to continue shopping?(plez dont put a space before typing also only inputs that work are yes and no)")    
-        cart.append(store[purchased]["name"])
-    
+        cart.append(store[purchased])
+        print(cart)
+        
         x+=store[purchased]["price"]
+    
+         
+   
     if keepgoing=="no":
+
+    
+
+
         print(f"alr ur cart consists of {cart}. ur total will be {x} dollars")
 dictonary(store)
 
