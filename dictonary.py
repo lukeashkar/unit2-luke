@@ -58,8 +58,9 @@ def dictonary(items):
 
     
 
-
-        print(f"alr ur cart consists of {cart}. ur total will be {x} dollars")
+        for i in range(len):
+             
+            print(f"alr ur cart consists of {cart}. ur total will be {x} dollars")
 dictonary(store)
 
 
