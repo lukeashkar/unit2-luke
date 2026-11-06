@@ -48,7 +48,7 @@ def dictonary(items):
         purchased=int(input("which item do u want"))
         keepgoing = input("would you like to continue shopping?(plez dont put a space before typing also only inputs that work are yes and no)")    
         cart.append(store[purchased])
-        print(cart)
+        
         
         x+=store[purchased]["price"]
     
@@ -58,11 +58,15 @@ def dictonary(items):
 
     
 
-        for i in range(len):
+        for i in range(len(cart)):
+            itemname=(cart[i]["name"])
              
-            print(f"alr ur cart consists of {cart}. ur total will be {x} dollars")
+            print(f"alr ur cart consists of {itemname}. ur total will be {x} dollars")
 dictonary(store)
 
+
+#black = [people, people, people, white people]
+#print(len(black))
 
 
 

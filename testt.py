@@ -9,5 +9,5 @@ def emeralds(N, weight):
             x.append(y)
             y=0
     x.append(y)
-    print(max(x))
+    print(f"the max weight u can buy is {max(x)} pounds")
 emeralds(13,[2,3,4,4,5,6,1,2,2,2,1,8,2])
